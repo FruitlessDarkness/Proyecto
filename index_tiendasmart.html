@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiendaSmart Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f9f9;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background-color: #0b5394;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #3d85c6;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #073763;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #0b5394;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+        .producto {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: #e0f0ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>TiendaSmart Solutions</h1>
+        <p>Modernizando tu tienda física</p>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav>
+        <a href="#quienes">¿Quiénes somos?</a>
+        <a href="#quehacemos">¿Qué hacemos?</a>
+        <a href="#productos">Productos / Servicios</a>
+        <a href="#pedido">Formulario de Pedido</a>
+    </nav>
+
+    <!-- Sección: Quiénes somos -->
+    <section id="quienes">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una empresa dedicada a desarrollar soluciones digitales para la gestión eficiente de tiendas físicas.</p>
+    </section>
+
+    <!-- Sección: Qué hacemos -->
+    <section id="quehacemos">
+        <h2>¿Qué hacemos?</h2>
+        <p>Ofrecemos herramientas tecnológicas como puntos de venta, sistemas de inventario, y plataformas web de atención al cliente.</p>
+    </section>
+
+    <!-- Sección: Productos -->
+    <section id="productos">
+        <h2>Productos / Servicios que ofrecemos</h2>
+        <div class="producto">
+            <h3>Software de Punto de Venta</h3>
+            <img src="pos.png" alt="POS" width="200"><br>
+            <p>Colores: Gris, Azul</p>
+            <p>Tamaños: Estándar</p>
+            <p>Precio: $1,500 MXN</p>
+            <a href="submenus/pos.html">Ver más</a>
+        </div>
+        <div class="producto">
+            <h3>Aplicación de Inventario</h3>
+            <img src="inventario.png" alt="Inventario" width="200"><br>
+            <p>Colores: Verde, Blanco</p>
+            <p>Tamaños: App móvil y escritorio</p>
+            <p>Precio: $1,200 MXN</p>
+            <a href="submenus/inventario.html">Ver más</a>
+        </div>
+    </section>
+
+    <!-- Sección: Formulario de pedido -->
+    <section id="pedido">
+        <h2>Formulario de Pedido</h2>
+        <form action="procesar_pedido.php" method="post">
+            Nombre completo: <input type="text" name="nombre" required><br><br>
+            Correo electrónico: <input type="email" name="correo" required><br><br>
+            Producto: 
+            <select name="producto">
+                <option value="pos">POS</option>
+                <option value="inventario">Inventario</option>
+            </select><br><br>
+            Cantidad: <input type="number" name="cantidad" min="1" required><br><br>
+            Comentarios: <br>
+            <textarea name="comentarios" rows="4" cols="40"></textarea><br><br>
+            <input type="submit" value="Realizar Pedido">
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>TiendaSmart Solutions &copy; 2025 | Proyecto UAEM</p>
+    </footer>
+</body>
+</html>
